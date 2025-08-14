@@ -1,0 +1,35 @@
+[build]
+  publish = "dist"
+  command = "yarn build"
+
+# Handle client-side routing - redirect all routes to index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Additional redirects for specific routes
+[[redirects]]
+  from = "/services"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/stylists"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/booking"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/login"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/register"
+  to = "/index.html"
+  status = 200 
