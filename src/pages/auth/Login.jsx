@@ -111,10 +111,10 @@ const Login = () => {
             {/* Demo Credentials Alert */}
             <Alert severity="info" sx={{ mb: 3 }}>
               <Typography variant="body2">
-                <strong>Demo Credentials:</strong><br />
+              { /* <strong>Demo Credentials:</strong><br />
                 • Admin: admin@ghbeautyhub.com / admin123<br />
                 • Stylist: stylist@ghbeautyhub.com / stylist123<br />
-                • Customer: customer@ghbeautyhub.com / customer123
+                • Customer: customer@ghbeautyhub.com / customer123 */}
               </Typography>
             </Alert>
 
