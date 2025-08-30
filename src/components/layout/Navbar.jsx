@@ -17,6 +17,7 @@ import {
   useTheme,
   useMediaQuery,
 } from '@mui/material';
+import Logo from '../common/Logo';
 import {
   Menu as MenuIcon,
   Home,
@@ -75,12 +76,7 @@ const Navbar = () => {
   const drawer = (
     <Box sx={{ width: 250 }}>
       <Box sx={{ p: 2, textAlign: 'center' }}>
-        <Typography variant="h6" color="primary" fontWeight="bold">
-          GH Beauty Hub
-        </Typography>
-        <Typography variant="caption" color="text.secondary">
-          Big Gurls Beauty Palour
-        </Typography>
+        <Logo size="large" />
       </Box>
       <List>
         {navItems.map((item) => (
@@ -140,20 +136,19 @@ const Navbar = () => {
             <MenuIcon />
           </IconButton>
 
-          <Typography
-            variant="h6"
+          <Box
             component={Link}
             to="/"
             sx={{
               flexGrow: 1,
               textDecoration: 'none',
-              color: 'primary.main',
-              fontWeight: 'bold',
-              fontSize: { xs: '1.1rem', md: '1.5rem' },
+              display: 'flex',
+              alignItems: 'center',
+              gap: 1,
             }}
           >
-            GH Beauty Hub
-          </Typography>
+            <Logo size="medium" />
+          </Box>
 
           {!isMobile && (
             <Box sx={{ display: 'flex', gap: 2 }}>

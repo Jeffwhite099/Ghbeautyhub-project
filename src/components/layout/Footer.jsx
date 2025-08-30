@@ -8,6 +8,7 @@ import {
   IconButton,
   Divider,
 } from '@mui/material';
+import Logo from '../common/Logo';
 import {
   Facebook,
   Instagram,
@@ -35,9 +36,9 @@ const Footer = () => {
         <Grid container spacing={4}>
           {/* Salon Info */}
           <Grid item xs={12} md={4}>
-            <Typography variant="h6" gutterBottom fontWeight="bold">
-              GH Beauty Hub
-            </Typography>
+            <Box sx={{ mb: 2 }}>
+              <Logo size="medium" />
+            </Box>
             <Typography variant="subtitle2" gutterBottom>
               Big Gurls Beauty Palour
             </Typography>

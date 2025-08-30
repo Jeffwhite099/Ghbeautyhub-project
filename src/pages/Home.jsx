@@ -14,6 +14,7 @@ import {
   useTheme,
   useMediaQuery,
 } from '@mui/material';
+import Logo from '../components/common/Logo';
 import {
   Spa,
   People,
@@ -105,6 +106,9 @@ const Home = () => {
         <Container maxWidth="lg">
           <Grid container spacing={4} alignItems="center">
             <Grid item xs={12} md={6}>
+              <Box sx={{ textAlign: 'center', mb: 3 }}>
+                <Logo variant="hero" size="medium" />
+              </Box>
               <Typography
                 variant="h2"
                 component="h1"

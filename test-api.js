@@ -1,6 +1,6 @@
-const axios = require('axios');
+import axios from 'axios';
 
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'http://localhost:5001/api';
 
 async function testAPI() {
   console.log('🧪 Testing GH Beauty Hub API...\n');

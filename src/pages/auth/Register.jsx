@@ -28,11 +28,12 @@ import {
 import { useForm, Controller } from 'react-hook-form';
 import { Link as RouterLink, useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
-import { auth, db } from '../../lib/supabase';
+import { useAuth } from '../../contexts/AuthContext';
 
 const Register = () => {
   const theme = useTheme();
   const navigate = useNavigate();
+  const { signUp } = useAuth();
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -49,17 +50,7 @@ const Register = () => {
     setIsLoading(true);
     try {
       // Sign up with Supabase
-      const { data: authData, error: signUpError } = await auth.signUp(
-        data.email,
-        data.password,
-        {
-          first_name: data.firstName,
-          last_name: data.lastName,
-          phone: data.phone,
-          role: data.role,
-        }
-      );
-
+      const {} = await signUp(email,password,phone,role)
       if (signUpError) {
         throw signUpError;
       }

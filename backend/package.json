@@ -4,7 +4,7 @@
   "description": "Backend API for GH Beauty Hub",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node --watch server.js",
     "dev": "nodemon server.js",
     "dev-simple": "nodemon server-simple.js",
     "seed": "node seed.js",

@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
-require('dotenv').config({ path: './config.env' });
+require('dotenv').config()
 
 // Import routes
 const authRoutes = require('./routes/auth');
@@ -34,7 +34,7 @@ app.use(cors({
 }));
 
 // Body parsing middleware
-app.use(express.json({ limit: '10mb' }));
+app.use(express.json())
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
 // Database connection
