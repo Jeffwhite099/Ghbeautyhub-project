@@ -22,3 +22,4 @@ echo 📁 Your dist folder contains:
 dir dist
 echo.
 pause
+

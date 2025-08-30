@@ -129,3 +129,4 @@ VITE_SUPABASE_ANON_KEY=your-anon-key-here
 Your GH Beauty Hub project is fully prepared for Netlify hosting. All logos are included, routing is configured, and the build process is optimized.
 
 **Next step**: Choose your deployment method and go live! 🚀
+
